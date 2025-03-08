@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Razor Helmet Light Mount Adapter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Header Section with Logo -->
+  <header class="header">
+    <a href="index.html" class="logo-link">
+      <img src="images/logo.png" alt="Company Logo" class="logo">
+    </a>
+    <h1>Razor Helmet Light Mount Adapter</h1>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="container">
+    
+    <!-- Intro Section -->
+    <section class="intro">
+      <div class="intro-text">
+        <h2>Precision Lighting Attachments</h2>
+        <p>Engineered specifically for cave diving, our adapters ensure reliable performance underwater.</p>
+      </div>
+      <div class="intro-image">
+        <img src="images/background.jpg" alt="Cave Diving Background">
+      </div>
+    </section>
+
+    <!-- Product List Section -->
+    <section class="products">
+      <h2>Our Products</h2>
+      <div class="product-grid">
+        
+        <!-- Product 1 -->
+        <div class="product-card">
+          <img src="images/Attachment 1.jpg" alt="Light Attachment 1">
+          <h3>Light Attachment 1</h3>
+          <p class="price">$99.99</p>
+          <p>Designed to securely attach Dive Rite lights to the Razor helmet system for reliable cave diving.</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <img src="images/Attachment 2.jpg" alt="Light Attachment 2">
+          <h3>Light Attachment 2</h3>
+          <p class="price">$99.99</p>
+          <p>Enhanced stability and seamless integration between the Razor Helmet mount and Dive Rite lights.</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <img src="images/Attachment 3.jpg" alt="Light Attachment 3">
+          <h3>Light Attachment 3</h3>
+          <p class="price">$99.99</p>
+          <p>A robust and durable adapter, ensuring a strong connection between your diving light and helmet.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    © 2025 Razor Helmet Light Mount Adapter. All rights reserved.
+  </footer>
+
+</body>
+</html>
