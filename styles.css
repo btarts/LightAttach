@@ -1,136 +1,67 @@
-/* Basic resets and fonts (optional) */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Container and Layout */
-body {
-  font-family: Arial, sans-serif;
-  /* Center all text by default (optional – you can remove if needed) */
-  text-align: center;
-  background-color: #f8f8f8;
-  color: #333;
-}
-
-.header, .footer {
-  background-color: #ffffff;
-  padding: 1rem 0;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.header h1, .footer {
-  margin: 0;
-}
-
-/* Main container centered */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
   text-align: center;
 }
 
-/* Intro Section */
-.intro {
-  margin-bottom: 2rem;
+.lightbox img {
+  max-width: 80%;
+  max-height: 80vh;
+  margin-top: 50px;
 }
 
-.intro-text {
-  max-width: 800px;
-  margin: 0 auto;
+.close-lightbox {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
 }
 
-/* Products Section */
-.products {
-  margin-bottom: 2rem;
+/* Modal Styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background: white;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Grid for product cards */
-.product-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; /* Center the product cards */
-  gap: 2rem;              /* Space between cards */
+.modal h3 {
+  margin-top: 0;
 }
 
-/* Product Card Styling */
-.product-card {
-  background-color: #fff;
-  width: 300px;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
-  transition: box-shadow 0.3s ease;
-  padding-bottom: 1rem;
+.modal .close-modal {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 25px;
+  cursor: pointer;
 }
 
-.product-card:hover {
-  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
-}
-
-/* Product Images */
-.product-images {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  padding: 1rem;
-}
-
-.product-images a {
-  display: inline-block;
-}
-
-/* Thumbnails – the hover effect that raises images slightly */
-.thumbnail {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.thumbnail:hover {
-  transform: translateY(-5px);
-}
-
-/* Product Details */
-.product-card h3 {
-  margin: 0.5rem 0;
-}
-
-.product-card .price {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-/* Payment Options Section */
-.payment-options {
-  margin-bottom: 2rem;
-}
-
-.payment-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1rem;
-}
-
-.payment-btn {
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  background-color: #007bff;
-  color: #fff;
-  border-radius: 4px;
-  transition: background-color 0.2s ease;
-}
-
-.payment-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Footer */
-.footer {
-  font-size: 0.9rem;
-  margin-top: 2rem;
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
