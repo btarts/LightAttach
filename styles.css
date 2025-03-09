@@ -1,45 +1,136 @@
-/* Basic styling for your page (already in your file) */
-body {
-  font-family: Arial, sans-serif;
+/* Basic resets and fonts (optional) */
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Grid styling */
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  margin-top: 20px;
+/* Container and Layout */
+body {
+  font-family: Arial, sans-serif;
+  /* Center all text by default (optional – you can remove if needed) */
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #333;
 }
 
-/* Product card styling */
-.product-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
+.header, .footer {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header h1, .footer {
+  margin: 0;
+}
+
+/* Main container centered */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
   text-align: center;
 }
 
-/* Keep product images in a row side-by-side */
+/* Intro Section */
+.intro {
+  margin-bottom: 2rem;
+}
+
+.intro-text {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Products Section */
+.products {
+  margin-bottom: 2rem;
+}
+
+/* Grid for product cards */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the product cards */
+  gap: 2rem;              /* Space between cards */
+}
+
+/* Product Card Styling */
+.product-card {
+  background-color: #fff;
+  width: 300px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease;
+  padding-bottom: 1rem;
+}
+
+.product-card:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+}
+
+/* Product Images */
 .product-images {
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
-  margin-bottom: 1rem;
+  gap: 1rem;
+  padding: 1rem;
 }
 
-/* Thumbnail styling */
+.product-images a {
+  display: inline-block;
+}
+
+/* Thumbnails – the hover effect that raises images slightly */
 .thumbnail {
-  max-width: 100px;  /* adjust as needed */
-  height: auto;
-  cursor: pointer;
-  border: 1px solid #ccc;
-  padding: 2px;
-  border-radius: 4px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Price styling */
-.price {
+.thumbnail:hover {
+  transform: translateY(-5px);
+}
+
+/* Product Details */
+.product-card h3 {
+  margin: 0.5rem 0;
+}
+
+.product-card .price {
   font-weight: bold;
-  color: green;
+  margin-bottom: 0.5rem;
+}
+
+/* Payment Options Section */
+.payment-options {
+  margin-bottom: 2rem;
+}
+
+.payment-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.payment-btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.payment-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Footer */
+.footer {
+  font-size: 0.9rem;
+  margin-top: 2rem;
 }
