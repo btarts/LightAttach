@@ -131,15 +131,18 @@ body {
   text-align: center;
 }
 
+/* Remove the modal overlay on page load */
 .modal-overlay {
-  display: none;
+  display: none; /* Hides it until triggered */
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
+
 
 /* Close Button */
 .close-modal {
