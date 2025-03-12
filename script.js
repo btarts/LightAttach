@@ -4,7 +4,7 @@ const lightboxImg = document.getElementById("lightbox-img");
 
 document.querySelectorAll(".lightbox-trigger").forEach(img => {
   img.addEventListener("click", function() {
-    lightbox.style.display = "block";
+    lightbox.style.display = "flex";
     lightboxImg.src = this.dataset.full;
   });
 });
