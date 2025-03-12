@@ -3,92 +3,44 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Custom gear addons and modificaitons</title>
+  <title>Custom Gear Add-ons & Mods</title>
   <link rel="stylesheet" href="styles.css">
-  <script defer src="script.js"></script> 
+  <script defer src="script.js"></script>
 </head>
 <body>
 
-  <!-- Header Section -->
   <header class="header">
-    <h1>Custom Printed Adapters and addons</h1>
+    Custom Printed Adapters & Add-ons
   </header>
 
-  <!-- Main Content Container -->
-  <main class="container">
-    
-    <!-- Intro Section -->
+  <main>
     <section class="intro">
-      <div class="intro-text">
-        <h2>Custom Printed Adapters and addons</h2>
-<p>Dive gear doesn't always fit together how you want it. These printed parts help connect great systems to each other for more flexability and choice. If something looks useful, message me on any of the apps below, and I'll send you what you want—just pay shipping and the item cost. Here are the payment options:  
-<a href="https://venmo.com/Briton-Tarter" target="_blank">Venmo</a>,  
-<a href="https://paypal.me/BritonTarter" target="_blank">PayPal</a>.
-
-
-      </div>
+      <h2>Need Custom Gear Adapters?</h2>
+      <p>Dive gear doesn't always fit together how you want it. These printed parts help connect great systems for more flexibility. If you need something, message me and I'll send it—just cover shipping and costs.</p>
+      <p>Payments via:  
+        <a href="https://venmo.com/Briton-Tarter" target="_blank">Venmo</a> |  
+        <a href="https://paypal.me/BritonTarter" target="_blank">PayPal</a>
+      </p>
     </section>
 
-    <!-- Product List Section -->
     <section class="products">
-      <h2>Addons and Adapters</h2>
+      <h2>Add-ons & Adapters</h2>
       <div class="product-grid">
-
-        <!-- Product 1 -->
         <div class="product-card">
-          <div class="product-images">
-            <img src="images/Attachment1a_thumb.jpg" alt="Light Attachment 1" class="thumbnail lightbox-trigger" data-full="images/Attachment1a_full.jpg">
-            <img src="images/Attachment1b_thumb.jpg" alt="Light Attachment 1" class="thumbnail lightbox-trigger" data-full="images/Attachment1b_full.jpg">
-          </div>
-          <h3 class="modal-trigger" data-title="Light Attachment 1" data-desc="Thicker necklace bungee adapter.">Light Attachment 1</h3>
+          <img src="images/Attachment1a_thumb.jpg" alt="Adapter 1" class="thumbnail lightbox-trigger" data-full="images/Attachment1a_full.jpg">
+          <h3 class="modal-trigger" data-title="Adapter 1" data-desc="Thicker necklace bungee adapter.">Adapter 1</h3>
           <p class="price">$19.99</p>
         </div>
-
-        <!-- Product 2 -->
-        <div class="product-card">
-          <div class="product-images">
-            <img src="images/Attachment2a_thumb.jpg" alt="Light Attachment 2" class="thumbnail lightbox-trigger" data-full="images/Attachment2a_full.jpg">
-            <img src="images/Attachment2b_thumb.jpg" alt="Light Attachment 2" class="thumbnail lightbox-trigger" data-full="images/Attachment2b_full.jpg">
-          </div>
-          <h3 class="modal-trigger" data-title="Light Attachment 2" data-desc="SPG cover to prevent scratches and damage.">Light Attachment 2</h3>
-          <p class="price">$9.99</p>
-        </div>
-
-        <!-- Product 3 -->
-        <div class="product-card">
-          <div class="product-images">
-            <img src="images/Attachment3a_thumb.jpg" alt="Light Attachment 3" class="thumbnail lightbox-trigger" data-full="images/Attachment3a_full.jpg">
-            <img src="images/Attachment3b_thumb.jpg" alt="Light Attachment 3" class="thumbnail lightbox-trigger" data-full="images/Attachment3b_full.jpg">
-          </div>
-          <h3 class="modal-trigger" data-title="Light Attachment 3" data-desc="Snoot for DS160 strobe with GoPro-style attachments.">Light Attachment 3</h3>
-          <p class="price">$29.99</p>
-        </div>
-
-        <!-- Product 4 -->
-        <div class="product-card">
-          <div class="product-images">
-            <img src="images/Attachment4a_thumb.jpg" alt="Light Attachment 4" class="thumbnail lightbox-trigger" data-full="images/Attachment4a_full.jpg">
-            <img src="images/Attachment4b_thumb.jpg" alt="Light Attachment 4" class="thumbnail lightbox-trigger" data-full="images/Attachment4b_full.jpg">
-          </div>
-          <h3 class="modal-trigger" data-title="Light Attachment 4" data-desc="Adapter for Ex35 Expedition light on Razor mount.">Light Attachment 4</h3>
-          <p class="price">$29.99</p>
-        </div>
-
       </div>
     </section>
-
   </main>
 
-  <!-- Lightbox Popup -->
   <div class="lightbox" id="lightbox">
     <span class="close-lightbox" onclick="closeLightbox()">&times;</span>
     <img id="lightbox-img" src="" alt="Enlarged View">
   </div>
 
-  <!-- Modal Overlay -->
   <div class="modal-overlay" id="modal-overlay"></div>
-
-  <!-- Product Modal -->
   <div class="modal" id="modal">
     <span class="close-modal" onclick="closeModal()">&times;</span>
     <h3 id="modal-title"></h3>
